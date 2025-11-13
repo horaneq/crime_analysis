@@ -12,6 +12,7 @@ FILE_VAR = {
     "education_exp.csv": "education_exp",
     "migration.csv": "migration_balance",
     "tourism.csv": "tourism_usage",
+    "inflation.csv": "inflation",
 }
 
 def strip_prefix_woj(s: str) -> str:
