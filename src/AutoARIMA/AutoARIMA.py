@@ -9,9 +9,9 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # --- KONFIGURACJA ---
-DATA_PATH = "../../data/processed/panel.csv"
-OUTPUT_DIR = "../../output/auto_arima/forecast/"
-OUTPUT_PREDICTIONS = "../../output/auto_arima/forecast_arima.csv"
+DATA_PATH = "data/processed/panel.csv"
+OUTPUT_DIR = "output/auto_arima/forecast_plakat/"
+OUTPUT_PREDICTIONS = "output/auto_arima/forecast_arima.csv"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(os.path.dirname(OUTPUT_PREDICTIONS), exist_ok=True)
 
@@ -130,25 +130,62 @@ for unit, features in best_configs.items():
     # =========================================================
     # WYKRES (Historia + Przyszłość)
     # =========================================================
-    plt.figure(figsize=(12, 6))
+    plt.figure(figsize=(12, 6), dpi=300)
+    ax = plt.gca()
+
+    plt.gcf().patch.set_alpha(0)
+    ax.patch.set_alpha(0)
 
     # Historia
-    plt.plot(df_history["year"], y_history, label="Dane historyczne (2004-2024)", marker="o")
+    plt.plot(
+        df_history["year"],
+        y_history,
+        label="Dane historyczne (2004–2024)",
+        marker="o",
+        linewidth=2,
+        color="#6a1b9a"
+    )
 
     # Prognoza
-    plt.plot(future_years, forecast, label="PROGNOZA (2025-2029)", color="red", marker="s", linestyle="--")
+    plt.plot(
+        future_years,
+        forecast,
+        label="Prognoza (2025–2029)",
+        color="#ffb300",
+        marker="s",
+        linestyle="--",
+        linewidth=2.5
+    )
 
     # Przedział ufności
-    plt.fill_between(future_years, conf_int[:, 0], conf_int[:, 1], color='red', alpha=0.15,
-                     label="Przedział ufności 95%")
+    plt.fill_between(
+        future_years,
+        conf_int[:, 0],
+        conf_int[:, 1],
+        color="#ffb300",
+        alpha=0.25,
+        label="Przedział ufności 95%"
+    )
 
     plt.title(
-        f"Prognoza przestępczości: {unit} (2025-2029)")
-    plt.xlabel("Rok")
-    plt.ylabel("Wskaźnik przestępczości")
-    plt.legend()
-    plt.grid(True, alpha=0.3)
-    plt.savefig(f"{OUTPUT_DIR}/{unit}_AutoARIMA.png", dpi=200)
+        f"Prognoza przestępczości: {unit} (2025–2029)",
+        fontsize=16,
+        weight="bold"
+    )
+    plt.xlabel("Rok", fontsize=12)
+    plt.ylabel("Wskaźnik przestępczości", fontsize=12)
+
+    plt.legend(frameon=False, fontsize=10)
+    plt.grid(alpha=0.2)
+
+    plt.tight_layout()
+    plt.savefig(
+        f"{OUTPUT_DIR}/{unit}_AutoARIMA.png",
+        dpi=300,
+        transparent=True,
+        bbox_inches="tight",
+        facecolor="none"
+    )
     plt.close()
 
 # Zapis zbiorczy CSV
