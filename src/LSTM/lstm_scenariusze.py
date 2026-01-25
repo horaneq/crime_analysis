@@ -101,7 +101,7 @@ for unit in units:
         pred_perm = model.predict(X_perm, verbose=0).reshape(-1)
         rmse_perm = np.sqrt(mean_squared_error(y_test, pred_perm))
 
-        importance = rmse_perm - base_rmse 
+        importance = rmse_perm - base_rmse
         all_rows.append({
             "unit": unit,
             "feature": col,

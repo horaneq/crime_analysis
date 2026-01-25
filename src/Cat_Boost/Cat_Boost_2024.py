@@ -128,10 +128,11 @@ for unit, features in best_configs.items():
              label="Dane historyczne (2004-2020)", marker="o")
 
     plt.plot(df_unit.loc[mask_test, "year"], y_test,
-             label="Dane rzeczywiste (2021-2024)", color="green", marker="o")
+            label="Dane rzeczywiste (2021-2024)", color="orange", marker="o")
 
     plt.plot(df_unit.loc[mask_test, "year"], preds,
-             label="Predykcja CatBoost (2021-2024)", color="red", linestyle="--", marker="s")
+            label="Predykcja CatBoost (2021-2024)", color="green", linestyle="--", marker="s")
+
 
     plt.title(f"{unit}\nModel: CatBoost, RMSE:{rmse:.2f} , MAE:{mae:.2f}, MAPE:{mape:.2f}%, R2:{r2:.2f}")
     plt.xlabel("Rok")
