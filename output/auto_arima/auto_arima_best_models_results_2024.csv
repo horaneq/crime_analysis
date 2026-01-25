@@ -1,0 +1,17 @@
+unit,best_features,R2,MAE,RMSE,MAPE
+Dolnośląskie,"['unemployment', 'population_density', 'migration_balance', 'inflation']",-2.7831368477611256,1.2783978451911864,1.7829400760408298,4.5406696450703965
+Kujawsko-Pomorskie,"['unemployment', 'population_density', 'migration_balance', 'tourism_usage']",-1.4525714901583622,1.768078780742587,2.106737283782797,8.16753618362489
+Lubelskie,"['unemployment', 'population_density', 'public_safety_exp', 'education_exp', 'inflation']",-2.4159908575628233,0.6351439947304036,0.6809077464258382,3.9661915344432668
+Lubuskie,"['public_safety_exp', 'tourism_usage']",-0.15049647572471425,1.088855501413172,1.3762781131073416,4.1317084206269685
+Mazowieckie,"['unemployment', 'tourism_usage', 'inflation']",-0.9864980053937473,0.5641089109627595,0.8737553606762128,2.559402491984079
+Małopolskie,"['unemployment', 'tourism_usage']",0.3742028322486374,0.9284184187883548,1.2281446809189938,4.091616823576459
+Opolskie,"['unemployment', 'population_density', 'migration_balance', 'tourism_usage']",-1.0828853588193321,0.7793295966475347,0.8889801793271499,4.461695111935833
+Podkarpackie,"['avg_salary', 'public_safety_exp', 'migration_balance']",0.751223557628731,0.3766914728954043,0.4740641979462067,3.149391868169318
+Podlaskie,"['unemployment', 'migration_balance', 'tourism_usage', 'inflation']",0.5243390923845039,0.8230560441738022,1.2394954848768034,5.4483216833374035
+Pomorskie,"['unemployment', 'public_safety_exp', 'tourism_usage']",-9.554657014100982,2.0625102041973857,2.3204861937884145,9.135924861571224
+Warmińsko-Mazurskie,"['population_density', 'avg_salary', 'migration_balance']",0.4755583800953631,0.576174618781307,0.6827517366160528,3.013533001191391
+Wielkopolskie,"['unemployment', 'avg_salary', 'education_exp', 'migration_balance', 'inflation']",-5.086392544020169,0.6562739950639154,0.8487865912259627,3.4872230396307673
+Zachodniopomorskie,"['unemployment', 'population_density', 'avg_salary', 'education_exp', 'inflation']",-0.6867529900472187,1.0035609023306096,1.819673620111793,4.209233121984216
+Łódzkie,"['unemployment', 'public_safety_exp', 'tourism_usage']",-2.225724439119324,1.9675043664668106,2.5918394292083824,9.040353239781911
+Śląskie,"['unemployment', 'avg_salary', 'public_safety_exp', 'inflation']",0.6468202836814118,2.1708813897937125,2.459220972062109,7.604843487908755
+Świętokrzyskie,"['unemployment', 'avg_salary', 'migration_balance', 'inflation']",0.9430351061030912,0.2785147674715316,0.3871415144094246,1.6487812387402274

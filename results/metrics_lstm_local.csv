@@ -1,0 +1,17 @@
+unit,RMSE,MAE,MAPE,R2,Features,Model,train_years,test_years,seq_len
+Dolnośląskie,7.813841193470555,6.320835113525391,23.260341634166508,-71.66205596923828,"['unemployment', 'population_density', 'migration_balance', 'inflation']",LSTM_exo_only,2004-2020,2021-2024,5
+Kujawsko-Pomorskie,5.42308958669163,5.086774826049805,25.016377422483625,-15.25153923034668,"['unemployment', 'population_density', 'migration_balance', 'tourism_usage']",LSTM_exo_only,2004-2020,2021-2024,5
+Lubelskie,1.2507839128988918,1.1033978462219238,6.883674237343933,-10.526703834533691,"['unemployment', 'population_density', 'public_safety_exp', 'education_exp', 'inflation']",LSTM_exo_only,2004-2020,2021-2024,5
+Lubuskie,7.81529100536475,7.250659465789795,28.214500752017496,-36.09907150268555,"['public_safety_exp', 'tourism_usage']",LSTM_exo_only,2004-2020,2021-2024,5
+Mazowieckie,3.5862441253879918,3.2828588485717773,14.871357395156187,-32.4648323059082,"['unemployment', 'tourism_usage', 'inflation']",LSTM_exo_only,2004-2020,2021-2024,5
+Małopolskie,3.2777077582975136,2.902090549468994,13.790433120566028,-3.4573330879211426,"['unemployment', 'tourism_usage']",LSTM_exo_only,2004-2020,2021-2024,5
+Opolskie,3.235545365884593,3.114619731903076,18.195084692169022,-26.591537475585938,"['unemployment', 'population_density', 'migration_balance', 'tourism_usage']",LSTM_exo_only,2004-2020,2021-2024,5
+Podkarpackie,1.0616743582342605,0.9228107929229736,7.1069999753195665,-0.24772179126739502,"['avg_salary', 'public_safety_exp', 'migration_balance']",LSTM_exo_only,2004-2020,2021-2024,5
+Podlaskie,3.4540023034490646,2.9931421279907227,19.04303679521851,-2.6936240196228027,"['unemployment', 'migration_balance', 'tourism_usage', 'inflation']",LSTM_exo_only,2004-2020,2021-2024,5
+Pomorskie,3.9688468380625403,3.79240083694458,16.990721662728937,-29.875534057617188,"['unemployment', 'public_safety_exp', 'tourism_usage']",LSTM_exo_only,2004-2020,2021-2024,5
+Warmińsko-Mazurskie,2.1028347773058567,1.9206480979919434,10.07729342182482,-3.974869728088379,"['population_density', 'avg_salary', 'migration_balance']",LSTM_exo_only,2004-2020,2021-2024,5
+Wielkopolskie,1.6270630285320598,1.345170021057129,7.093100299298801,-21.365144729614258,"['unemployment', 'avg_salary', 'education_exp', 'migration_balance', 'inflation']",LSTM_exo_only,2004-2020,2021-2024,5
+Zachodniopomorskie,5.14551049994592,4.482522487640381,21.157994813488923,-12.487183570861816,"['unemployment', 'population_density', 'avg_salary', 'education_exp', 'inflation']",LSTM_exo_only,2004-2020,2021-2024,5
+Łódzkie,1.3760018600185153,1.1818041801452637,5.611559617517293,0.09082150459289551,"['unemployment', 'public_safety_exp', 'tourism_usage']",LSTM_exo_only,2004-2020,2021-2024,5
+Śląskie,5.6936525037104095,3.878042221069336,12.072825125059074,-0.8931385278701782,"['unemployment', 'avg_salary', 'public_safety_exp', 'inflation']",LSTM_exo_only,2004-2020,2021-2024,5
+Świętokrzyskie,3.3276564577207113,2.65358304977417,16.003457488886696,-3.2086682319641113,"['unemployment', 'avg_salary', 'migration_balance', 'inflation']",LSTM_exo_only,2004-2020,2021-2024,5
